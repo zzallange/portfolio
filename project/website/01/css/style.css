@@ -19,6 +19,11 @@ a {
 i {
   font-family: fontawesome;
 }
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
 :root {
   --light-gray: #f0f0f0;
   --text-gray: #9b9b9b;
@@ -66,12 +71,17 @@ i {
 .head-top-left {
   display: flex;
   align-items: center;
-  /* background: gold; */
   width: 100%;
   flex: 1;
 }
 .head-top-left h1 {
   line-height: 1;
+}
+.btn-menu {
+  display: none;
+}
+.overlay {
+  display: none;
 }
 .iloom-logo {
   display: inline-block;
@@ -107,7 +117,6 @@ i {
   border-radius: 20px;
   background: transparent;
   font-size: 16px;
-  /* background: gold; */
 }
 .search-input input[type="text"]::placeholder {
   font-size: 16px;
@@ -167,7 +176,8 @@ i {
   display: block;
   padding: 15px;
 }
-.gnb-nav .menu-dep1:hover {
+.gnb-nav .menu-dep1:hover,
+.gnb-nav .menu-dep1.active {
   color: var(--point-color);
 }
 .gnb-nav .sub-gnb-wrap {
@@ -428,7 +438,7 @@ section {
 .category-menu {
   margin-bottom: 60px;
 }
-.category-menu > div {
+.category-menu-wrap {
   display: flex;
   justify-content: center;
   gap: 25px;

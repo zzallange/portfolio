@@ -7,9 +7,6 @@
   .best-category .cont-inner {
     padding: 0;
   }
-  .category-content {
-    /* height: 1567px; */
-  }
   .category-content .category-items {
     width: 32%;
   }
@@ -45,15 +42,126 @@
     left: 40%;
     padding: 13px;
   }
-}
+} /* //1280~ */
 @media (max-width: 1024px) {
   /* ####### Header ####### */
-  .gnb-nav {
+  .header {
+    height: 62px;
+  }
+  .head-top {
+    justify-content: flex-start;
+  }
+  .utility-menu {
     display: none;
   }
+  .search-box {
+    margin-left: 15px;
+    width: 65%;
+  }
+  .btn-menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .btn-menu .bar {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 2px;
+    background: #8f8f8f;
+    transition: 0.3s;
+  }
+  .btn-menu .bar:nth-child(1) {
+    transform: translateY(-5px);
+  }
+  .btn-menu .bar:nth-child(3) {
+    transform: translateY(5px);
+  }
+  .btn-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .btn-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .btn-menu.active .bar:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  .header .head-bottom {
+    right: calc(100vw - 25px);
+
+    top: 62px;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+  }
+  .header .head-bottom.active {
+    right: -25px;
+  }
+  .overlay {
+    display: block;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .info-nav {
+    display: none;
+  }
+  .nav {
+    display: block;
+    padding: 0 50px;
+    margin-top: 100px;
+  }
+  .gnb-nav > li {
+    display: block;
+  }
+  .gnb-nav .menu-dep1 {
+    position: relative;
+    padding: 13px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  .gnb-nav .menu-dep1:after {
+    content: "\f107";
+    font-family: fontawesome;
+    float: right;
+    vertical-align: middle;
+    margin-top: 5px;
+  }
+  .gnb-nav > li:last-child .menu-dep1:after {
+    display: none;
+  }
+  .gnb-nav .sub-gnb-wrap {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    border: none;
+    transition: 0.3s;
+  }
   /* ####### Common CSS ####### */
+  .wrap {
+    overflow: hidden;
+  }
   section {
     padding: 0 0 50px;
+  }
+  .subject-title {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  /* ####### Section: main-banner ####### */
+  .main-banner-slider [class*="swiper-button"] {
+    opacity: 0.8;
   }
   /* ####### Section: recommend-product ####### */
   .recommend-items {
@@ -64,14 +172,14 @@
   .product-slider .swiper-button-next {
     display: none;
   }
+  .recommend-product .subject-title {
+    padding-left: 0;
+  }
   /* ####### Section: iloom-event ####### */
   .iloom-event .banner-wrap {
     flex-direction: column;
   }
   /* ####### Section: best-category ####### */
-  .category-content {
-    /* height: 2062px; */
-  }
   .category-menu-items {
     gap: 0;
   }
@@ -89,7 +197,6 @@
   .category-content .category-items:nth-child(4n) {
     margin-right: 0;
   }
-
   /* ####### Section: iloom-promotion ####### */
   .iloom-promotion .promotion-content {
     flex-direction: column;
@@ -104,7 +211,6 @@
   .promotion-content .promotion-item .desc .btn-more {
     display: none;
   }
-
   /* ####### Section: iloom-interior ####### */
   .interior-content {
     height: 2360px;
@@ -134,7 +240,7 @@
   .sitemap-list .title {
     position: relative;
     margin: 0;
-    padding: 20px 0;
+    padding: 20px 15px;
     border-top: 1px solid #e3e3e3;
     cursor: pointer;
   }
@@ -160,7 +266,7 @@
   }
   .sitemap-list li a {
     display: block;
-    padding: 15px 0;
+    padding: 15px;
   }
   .footer-bottom {
     flex-direction: column;
@@ -172,4 +278,61 @@
     display: block;
     margin-left: 0;
   }
-}
+} /* //1024~ */
+@media (max-width: 768px) {
+  /* ####### Section: main-banner ####### */
+  .main-banner-slider {
+    height: 650px;
+  }
+  /* ####### Section: best-category ####### */
+  .category-menu-wrap {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .category-menu-wrap a {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .category-content .category-items {
+    width: 100%;
+  }
+  .category-content .category-items:nth-child(2n) {
+    margin-left: 0;
+  }
+  /* ####### Section: iloom-interior ####### */
+  .interior-products {
+    grid-auto-rows: 110px;
+  }
+  .interior-content {
+    height: 1800px;
+  }
+} /* //768~ */
+@media (max-width: 480px) {
+  /* ####### Common CSS ####### */
+  section {
+    padding: 0 0 35px;
+  }
+  /* ####### Section: best-category ####### */
+  .category-menu-wrap a {
+    width: 29%;
+  }
+  /* ####### Section: iloom-interior ####### */
+  .interior-content {
+    height: 1670px;
+  }
+  .interior-products {
+    gap: 10px;
+  }
+  .interior-product-item .hover-cont .item-tit:after {
+    margin-top: -4px;
+    font-size: 13px;
+  }
+  .interior-product-item .hover-cont .price {
+    font-size: 16px;
+  }
+  .interior-items button {
+    margin-bottom: 7px;
+  }
+} /* //480~ */
