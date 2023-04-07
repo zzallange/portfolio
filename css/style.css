@@ -543,15 +543,14 @@ main img {
 .work-slider .work-item a:hover .hover-cont {
   opacity: 1;
 }
-/* Practical Coding */
-.practical-coding {
-}
 /* ###### Section: eqilogue ###### */
 .epilogue {
   padding-bottom: 70px;
   background: #f5f7f6;
 }
 .epilogue p {
-  font-size: 50px;
+  text-align: center;
+  font-size: 38px;
+  line-height: 1.5;
   font-family: "TheJamsil5Bold";
 }
