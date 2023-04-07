@@ -1,0 +1,251 @@
+@media (max-width: 1280px) {
+  /* ###### Common CSS ###### */
+  section {
+    padding: 70px 0 0;
+  }
+  /* ###### Header ###### */
+  /* ###### MAIN ###### */
+  main .main-title {
+    font-size: 100px;
+  }
+  main .main-title span:first-child:after {
+    top: -5px;
+    right: -5px;
+    width: 25px;
+    height: 25px;
+  }
+  /* ###### Section: Intro ###### */
+  .intro .about-title p {
+    font-size: 42px;
+  }
+  .intro .about-title .line {
+    margin: 0 10px 10px;
+  }
+  .intro .about-myself {
+    gap: 30px;
+  }
+  .intro .about-myself .inbox {
+    flex-direction: column;
+    flex: 1.5;
+    gap: 15px;
+  }
+  /* ###### Section: Skill ###### */
+  /* ###### Section: Project ###### */
+  .project {
+    margin-top: 20px;
+  }
+  .project-content {
+    gap: 100px 70px;
+  }
+  /* ###### Section: eqilogue ###### */
+} /* //1280~1023 */
+@media (max-width: 1024px) {
+  /* ###### Common CSS ###### */
+  section {
+    padding: 65px 0 0;
+  }
+  .section-title {
+    font-size: 35px;
+  }
+  .more-view .btn-more {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .more-view .button-shape {
+    margin-left: -16px;
+    width: 35px;
+    height: 35px;
+  }
+  .more-view:hover .btn-more,
+  .project-image:hover ~ .project-info .more-view .btn-more {
+    transform: translateX(18px);
+  }
+  /* ###### Header ###### */
+  /* ###### MAIN ###### */
+  main .main-title {
+    font-size: 70px;
+  }
+  main .main-title span {
+    text-shadow: -1px 1px var(--point-color), -2px 2px var(--point-color),
+      -3px 3px var(--point-color), -4px 4px var(--point-color),
+      -5px 5px var(--point-color), -6px 6px var(--point-color),
+      -7px 7px var(--point-color), -8px 8px var(--point-color),
+      -9px 9px var(--point-color), -10px 10px var(--point-color);
+  }
+  main .main-title span:first-child:after {
+    width: 18px;
+    height: 18px;
+  }
+  /* ###### Section: Intro ###### */
+  .intro .about-title p {
+    font-size: 38px;
+    line-height: 1.4;
+  }
+  .intro .about-myself {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .intro .about-myself .inbox {
+    flex: 1;
+  }
+  .intro .about-myself .subject {
+    font-size: 30px;
+  }
+  .introduction .resume-view:hover .btn-more {
+    transform: translateX(18px);
+  }
+  .profile .thumb {
+    width: 300px;
+    height: 300px;
+  }
+  .experience .timeline {
+    justify-content: center;
+  }
+  /* ###### Section: Skill ###### */
+  .skill-list {
+    gap: 20px;
+  }
+  .skill-list .skill-item {
+    width: calc(51% - 20px);
+  }
+  /* ###### Section: Project ###### */
+  .project-content {
+    gap: 100px 30px;
+  }
+  .project-info .info-title h6 {
+    font-size: 20px;
+  }
+  .project-info .desc-list li span {
+    width: 110px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .project-info .desc-list li p {
+    font-size: 15px;
+  }
+  .project-info .project-view [class*="btn-"] {
+    padding: 8px 18px;
+  }
+  /* ###### Section: eqilogue ###### */
+} /* //1024~767 */
+@media (max-width: 768px) {
+  /* ###### Common CSS ###### */
+  .section-title {
+    font-size: 33px;
+  }
+  /* ###### Header ###### */
+  /* ###### MAIN ###### */
+  main .main-title {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  main .main-title span:first-child:after {
+    top: 0;
+    right: 0;
+  }
+  /* ###### Section: Intro ###### */
+  .intro .about-title p {
+    font-size: 33px;
+  }
+  .intro .about-title .line {
+    margin: 0 8px 8px;
+    height: 5px;
+  }
+  /* ###### Section: Skill ###### */
+  .skill .section-title {
+    margin-bottom: 40px;
+  }
+  .skill-list {
+    gap: 10px;
+  }
+  .skill-list .skill-item {
+    width: calc(50% - 10px);
+  }
+  /* ###### Section: Project ###### */
+  .project {
+    padding: 65px 0;
+  }
+  .project-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .work-slider .work-item {
+    height: 350px;
+  }
+  /* ###### Section: eqilogue ###### */
+} /* //768~481 */
+@media (max-width: 480px) {
+  /* ###### Common CSS ###### */
+  section {
+    padding: 50px 0 0;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  /* ###### Header ###### */
+  /* ###### MAIN ###### */
+  /* ###### Section: Intro ###### */
+  main .main-title {
+    font-size: 50px;
+  }
+  .intro .about-title p {
+    font-size: 28px;
+  }
+  .intro .about-title .line {
+    width: 70px;
+  }
+  .intro .about-myself {
+    margin-top: 50px;
+    gap: 40px;
+  }
+  .intro .about-myself .subject {
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+  .intro .about-myself .inbox {
+    gap: 25px;
+  }
+  .introduction p {
+    font-size: 16px;
+  }
+  .profile .thumb {
+    width: 245px;
+    height: 245px;
+  }
+  /* ###### Section: Skill ###### */
+  .skill .section-title {
+    margin-bottom: 25px;
+  }
+  .skill-list {
+    gap: 10px;
+  }
+  .skill-list .skill-item {
+    width: 100%;
+  }
+  .skill-item .skill-tit {
+    font-size: 21px;
+  }
+  .skill-item p {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  .skill-item .number {
+    font-size: 110px;
+  }
+  /* ###### Section: Project ###### */
+  .project {
+    margin-top: 0;
+  }
+  .title-box .section-title-desc {
+    font-size: 16px;
+  }
+  .project-content {
+    gap: 45px 30px;
+  }
+  .project-column {
+    gap: 45px;
+  }
+  /* ###### Section: eqilogue ###### */
+} /* //480~ */
