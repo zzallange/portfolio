@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* Reset */
+header,
+main,
+h1,
+h2,
+h3,
+p,
+strong,
+em,
+input,
+button,
+img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background: #000;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+/* body */
+body.active {
+  overflow: hidden;
+}
+.container {
+  position: relative;
+}
+/* Header */
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  padding: 28px 55px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  display: block;
+  width: 170px;
+}
+.btn-signin {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 5px;
+  background: #d9232e;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn-signin:hover {
+  background: #ee2734;
+}
+/* Main */
+main {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  border-bottom: 8px solid #222;
+  background: url("../img/main-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+main:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.heading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+}
+.heading h1 {
+  font-size: 70px;
+  line-height: 1.1;
+}
+.heading h1 strong {
+  display: block;
+  margin: 20px 0 25px;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.heading p {
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+.started {
+  position: relative;
+  display: inline-block;
+}
+.started input[type="email"],
+.started button {
+  height: 60px;
+  vertical-align: middle;
+}
+.started input[type="email"] {
+  margin-right: -4px;
+  padding: 15px 0 0 20px;
+  width: 450px;
+  background: #fff;
+}
+.started span {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: rgb(190, 190, 190);
+  transition: 0.1s;
+  pointer-events: none;
+}
+.started input[type="email"]:focus + span {
+  top: 15px;
+  font-weight: 500;
+  font-size: 13px;
+}
+.started button {
+  position: relative;
+  width: 220px;
+  background: #d9232e;
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+.started button:hover {
+  background: #ee2734;
+}
+.started button:after {
+  content: "\e93f";
+  font-family: xeicon;
+  display: inline-block;
+  margin: -2px 0 0 5px;
+  vertical-align: middle;
+  font-size: 25px;
+}
+/* Common: Section */
+section {
+  padding: 70px 0;
+  border-bottom: 8px solid #222;
+}
+section:nth-child(2n) .desc {
+  order: 2;
+}
+section:nth-child(2n) .thumb {
+  order: 1;
+}
+section:not(.qna) .inner {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+section .inner > div {
+  flex: 1;
+}
+section .desc h2 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+section .desc p {
+  font-size: 28px;
+  line-height: 1.4;
+}
+section .thumb {
+  position: relative;
+}
+section .thumb img {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+section .thumb .video-wrap {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+section .thumb .video-wrap video {
+  width: 100%;
+  height: 100%;
+}
+/* Section: enjoy, download, watch, create */
+.enjoy .thumb .video-wrap {
+  position: absolute;
+  top: 48%;
+  max-width: 73%;
+  max-height: 54%;
+}
+.watch .thumb .video-wrap {
+  position: absolute;
+  top: 33%;
+  max-width: 64%;
+  max-height: 62%;
+}
+/* Section: qna */
+.qna .inner {
+  margin: 0 auto;
+  max-width: 815px;
+  width: 90%;
+  text-align: center;
+}
+.qna h2 {
+  margin-bottom: 40px;
+  font-size: 50px;
+}
+.accordion {
+  margin-bottom: 60px;
+}
+.accordion-list {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 26px;
+}
+.qna-btn {
+  position: relative;
+  display: block;
+  margin-bottom: 2px;
+  padding: 20px;
+  background: #303030;
+}
+.qna-btn:after {
+  content: "\e913";
+  font-family: xeicon;
+  float: right;
+  margin-top: 2px;
+}
+.qna-btn.active:after {
+  transform: rotate(45deg);
+}
+.qna-cont {
+  display: none;
+  padding: 45px 20px;
+  background: #303030;
+}
+.qna .text {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+/* Footer */
+footer {
+  padding: 70px 0;
+  font-size: 14px;
+  color: #737373;
+}
+footer a {
+  color: #737373;
+}
+footer .inner {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 90%;
+}
+.sitemap {
+  margin-top: 40px;
+}
+.sitemap .links {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+  width: 25%;
+}
+.sitemap .links a {
+  display: block;
+  margin-bottom: 20px;
+  color: #737373;
+}
+.sitemap .links a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  margin: 20px 0 40px;
+}
+/* Modal */
+.modal-signin {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.6);
+}
+.signin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 80px 50px;
+  max-width: 365px;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.85);
+}
+.signin .btn-close {
+  position: absolute;
+  top: 35px;
+  right: 50px;
+  font-size: 27px;
+  color: #777;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.signin .btn-close:hover {
+  color: rgb(154, 154, 154);
+}
+.signin h3 {
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+.signin input[type="text"],
+.signin input[type="password"] {
+  display: block;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  background: #333;
+  font-size: 16px;
+  color: #fff;
+}
+.signin input[type="text"]:focus,
+.signin input[type="password"]:focus {
+  border-bottom: 1px solid #fff;
+}
+.signin input[type="text"]::placeholder,
+.signin input[type="password"]::placeholder {
+  transition: 0.3s;
+}
+.signin input[type="text"]:focus::placeholder,
+.signin input[type="password"]:focus::placeholder {
+  opacity: 0;
+}
+.signin button {
+  margin: 20px 0 15px;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  background: #d9232e;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.signin button:hover {
+  background: #ee2734;
+}
+.signin .save-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  font-size: 15px;
+  color: #b3b3b3;
+}
+/* .signin .save-info label {
+  padding-left: 20px;
+  cursor: pointer;
+}
+.signin .save-info label:before {
+  content: '\e929';
+  font-family: xeicon;
+}
+.signin .save-info input[type="checkbox"]{
+  display: none;
+} */
+.signin .save-info a {
+  color: #b3b3b3;
+}
+
+.signin strong {
+  display: block;
+  margin-bottom: 15px;
+  color: #737373;
+}
+
+.signin p {
+  font-size: 15px;
+  color: #737373;
+}
+.signin p a {
+  color: #0071eb;
+}
+.signin .save-info a:hover,
+.signin strong a:hover,
+.signin p a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,8 @@
+넷플릭스 클론코딩 Point
+
+1. main에 before로 백그라운드 이미지 셋팅
+2. email 인풋박스 focus시 span 태그 위치와 크기변동
+3. thumb박스에 이미지와 video 겹침작업과 위치설정
+4. section 컨텐츠의 텍스트와 이미지 order 변경
+5. qna 제이쿼리 사용
+6. 모달 signin 팝업창 show,hide

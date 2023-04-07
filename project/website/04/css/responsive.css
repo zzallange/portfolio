@@ -1,0 +1,176 @@
+@media (max-width: 1025px) {
+  /* Header */
+  header {
+    padding: 28px 50px;
+  }
+  .logo img {
+    width: 130px;
+  }
+  .btn-signin {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+  /* Main */
+  .heading h1 {
+    font-size: 58px;
+  }
+  .heading h1 strong {
+    font-size: 24px;
+  }
+  .heading p {
+    font-size: 18px;
+  }
+  .started {
+    width: 550px;
+  }
+  .started input[type="email"] {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+  }
+  .started span {
+    top: 18%;
+    font-size: 15px;
+  }
+  .started input[type="email"]:focus + span {
+    top: 10px;
+    font-size: 13px;
+  }
+  .started button {
+    display: block;
+    margin: 15px auto;
+    width: 145px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    font-size: 18px;
+  }
+  .started button:after {
+    margin: -2px 0 0 0;
+    font-size: 20px;
+  }
+  /* Common: Section */
+  section:not(.qna) .inner {
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+  }
+  section:nth-child(2n) .desc {
+    order: 1;
+  }
+  section:nth-child(2n) .thumb {
+    order: 2;
+  }
+  section .desc h2 {
+    font-size: 45px;
+  }
+  section .desc p {
+    font-size: 25px;
+  }
+  /* Section: qna */
+  .qna h2 {
+    font-size: 45px;
+  }
+  .qna-btn {
+    padding: 15px 20px;
+    font-size: 23px;
+  }
+  .qna-cont {
+    padding: 40px 20px;
+    font-size: 23px;
+  }
+}
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    padding: 20px 7%;
+  }
+  .logo img {
+    width: 85px;
+  }
+  .btn-signin {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  /* Main */
+  .heading h1 {
+    font-size: 30px;
+  }
+  .heading h1 strong {
+    font-size: 18px;
+  }
+  .heading p {
+    font-size: 16px;
+  }
+  .started {
+    width: 100%;
+  }
+  .started button {
+    width: 135px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+  }
+  /* Common: Section */
+  section {
+    padding: 50px 0;
+  }
+  section:not(.qna) .inner {
+    gap: 5px;
+  }
+  section .desc h2 {
+    font-size: 28px;
+  }
+  section .desc p {
+    font-size: 18px;
+  }
+  /* Section: qna */
+  .qna h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+  .qna-btn {
+    padding: 15px;
+    font-size: 18px;
+  }
+  .qna-cont {
+    padding: 25px 20px;
+    font-size: 18px;
+  }
+  /* Footer */
+  .sitemap .links {
+    width: 50%;
+  }
+  /* Modal */
+  .signin {
+    padding: 50px 35px;
+    width: 70%;
+  }
+  .signin .btn-close {
+    right: 35px;
+    font-size: 22px;
+  }
+  .signin h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  .signin input[type="text"],
+  .signin input[type="password"] {
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .signin button {
+    margin: 15px 0 10px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .signin .save-info {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+  .signin strong,
+  .signin p {
+    font-size: 14px;
+  }
+}
