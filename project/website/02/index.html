@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seoul Art Gellery</title>
+    <link rel="icon" href="images/favicon.png" />
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- Swiper Slide CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="header-wrap">
+          <div class="header-gnb">
+            <h1 class="logo">
+              <a href="#none">서울시립미술관</a>
+            </h1>
+            <nav class="nav">
+              <ul class="main-gnb">
+                <li class="main-menu">
+                  <a href="#none" class="main-menu-link">소개</a>
+                  <div class="sub-gnb-wrap">
+                    <ul class="sub-gnb">
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">미술관 소개</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">인사말</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">연혁</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">비전과 전략</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">조직 및 업무</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-menu">
+                  <a href="#none" class="main-menu-link">관람</a>
+                  <div class="sub-gnb-wrap">
+                    <ul class="sub-gnb">
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">관람안내</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">관람예약</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">시설안내</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">오시는 길</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-menu">
+                  <a href="#none" class="main-menu-link">전시</a>
+                  <div class="sub-gnb-wrap">
+                    <ul class="sub-gnb">
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">상설 전시</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">특별 전시</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">예정 전시</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">지난 전시</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-menu">
+                  <a href="#none" class="main-menu-link">교육/행사</a>
+                  <div class="sub-gnb-wrap">
+                    <ul class="sub-gnb">
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">교육 소개</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">프로그램</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">문화행사</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">교육 자료실</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-menu">
+                  <a href="#none" class="main-menu-link">소식/홍보</a>
+                  <div class="sub-gnb-wrap">
+                    <ul class="sub-gnb">
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">소식지</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">공지사항</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">FAQ</a>
+                      </li>
+                      <li class="sub-menu">
+                        <a href="#none" class="sub-menu-link">게시판</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <ul class="utility-links">
+              <li>
+                <a href="#none" class="login-link">로그인</a>
+              </li>
+              <li>
+                <a href="#none" class="join-link">회원가입</a>
+              </li>
+              <li>
+                <button class="btn-search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
+            <button class="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+            <div class="dim"></div>
+          </div>
+          <!-- <div class="search-box">
+            <a href="#none" class="search-logo">서울시립미술관</a>
+            <button class="btn-close">
+              <i></i>
+            </button>
+            <form class="search-form">
+              <input type="text" placeholder="검색어를 입력해주세요">
+              <button class="btn-sch"></button>
+            </form>
+          </div> -->
+        </div>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="intro-thumb">
+            <div class="video-wrap">
+              <video
+                src="images/art-gallery.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+              ></video>
+            </div>
+            <div class="intro-title">
+              <h2>seoul museum of art</h2>
+              <button class="btn-reservation">전시 관람 예약하기</button>
+            </div>
+          </div>
+          <div class="intro-info">
+            <div class="cont-inner">
+              <div class="intro-info-guide">
+                <ul class="info-list">
+                  <li>
+                    <p class="info-tit">관람시간</p>
+                    <div class="info-desc">
+                      <span>평일 (화–금) 10:00 ~ 20:00</span>
+                      <span>주말 (토-일) 10:00 ~ 19:00</span>
+                      <small>관람 종료 1시간 전까지 입장</small>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="info-tit">휴관일</p>
+                    <div class="info-desc">
+                      <span>매주 월요일 휴관</span>
+                      <span>정기휴관 (1월 1일)</span>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="info-tit">관람료</p>
+                    <div class="info-desc">
+                      <span>무료, 특별전 유료</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="info-guide">
+                  <a href="#none" class="btn-guide">관람안내</a>
+                  <a href="#none" class="btn-come">오시는길</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="exhibition">
+          <div class="cont-inner">
+            <div class="title-cont">
+              <h3 class="subject-tit">전시</h3>
+              <div class="swiper-btns">
+                <button class="swiper-button-prev swiper-button"></button>
+                <button class="control-button"></button>
+                <button class="swiper-button-next swiper-button"></button>
+              </div>
+            </div>
+            <div class="exhibition-slider swiper-container">
+              <ul class="swiper-wrapper">
+                <li class="exhibit swiper-slide">
+                  <a href="#none">
+                    <div class="item-thumb">
+                      <img
+                        src="images/gallery-01.jpg"
+                        alt="페터 바이벨: 인지 행위로서의 예술"
+                      />
+                    </div>
+                    <div class="item-desc">
+                      <span class="label black">전시</span>
+                      <span class="label white">특별전</span>
+                      <p class="item-tit">페터 바이벨: 인지 행위로서의 예술</p>
+                      <p class="date">2023.02.04 ~ 2023.05.20</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="exhibit swiper-slide">
+                  <a href="#none">
+                    <div class="item-thumb">
+                      <img
+                        src="images/gallery-02.jpg"
+                        alt="행복은 무엇인가를 찾아서"
+                      />
+                    </div>
+                    <div class="item-desc">
+                      <span class="label black">전시</span>
+                      <span class="label white">테마전</span>
+                      <p class="item-tit">행복은 무엇인가를 찾아서</p>
+                      <p class="date">2022.12.15 ~ 2023.07.13</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="exhibit swiper-slide">
+                  <a href="#none">
+                    <div class="item-thumb">
+                      <img
+                        src="images/gallery-03.jpg"
+                        alt="기하학의 세상에서 나를 찾다"
+                      />
+                    </div>
+                    <div class="item-desc">
+                      <span class="label black">전시</span>
+                      <span class="label white">테마전</span>
+                      <p class="item-tit">기하학의 세상에서 나를 찾다</p>
+                      <p class="date">2023.11.20 ~ 2023.02.18</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="exhibit swiper-slide">
+                  <a href="#none">
+                    <div class="item-thumb">
+                      <img
+                        src="images/gallery-04.jpg"
+                        alt="르네상스 시대의 조각"
+                      />
+                    </div>
+                    <div class="item-desc">
+                      <span class="label black">전시</span>
+                      <span class="label white">특별전</span>
+                      <p class="item-tit">르네상스 시대의 조각</p>
+                      <p class="date">2023.02.04 ~ 2023.05.20</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="exhibit swiper-slide">
+                  <a href="#none">
+                    <div class="item-thumb">
+                      <img
+                        src="images/gallery-05.jpg"
+                        alt="우리의 피터를 찾아서"
+                      />
+                    </div>
+                    <div class="item-desc">
+                      <span class="label black">전시</span>
+                      <span class="label white">테마전</span>
+                      <p class="item-tit">우리의 피터를 찾아서</p>
+                      <p class="date">2023.01.13 ~ 2023.04.15</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="exhibit swiper-slide">
+                  <a href="#none">
+                    <div class="item-thumb">
+                      <img
+                        src="images/gallery-06.jpg"
+                        alt="모던 데자인:생활,산업,외교하는 미술로"
+                      />
+                    </div>
+                    <div class="item-desc">
+                      <span class="label black">전시</span>
+                      <span class="label white">테마전</span>
+                      <p class="item-tit">
+                        모던 데자인:생활,산업,외교하는 미술로
+                      </p>
+                      <p class="date">2023.01.13 ~ 2023.03.31</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="exhibit swiper-slide">
+                  <a href="#none">
+                    <div class="item-thumb">
+                      <img
+                        src="images/gallery-07.jpg"
+                        alt="뒤틀린 데이터와 텍스트의 세계"
+                      />
+                    </div>
+                    <div class="item-desc">
+                      <span class="label black">전시</span>
+                      <span class="label white">특별전</span>
+                      <p class="item-tit">뒤틀린 데이터와 텍스트의 세계</p>
+                      <p class="date">2023.02.04 ~ 2023.05.20</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="exhibit swiper-slide">
+                  <a href="#none">
+                    <div class="item-thumb">
+                      <img src="images/gallery-08.jpg" alt="" />
+                    </div>
+                    <div class="item-desc">
+                      <span class="label black">전시</span>
+                      <span class="label white">그림전</span>
+                      <p class="item-tit">영원한 나르시시스트, 최경화</p>
+                      <p class="date">2023.02.04 ~ 2023.05.20</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="collection">
+          <div class="title-cont">
+            <h3 class="subject-tit">소장품</h3>
+            <a href="#none" class="btn-more">
+              <span>더보기</span>
+            </a>
+          </div>
+          <div class="art-content">
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">노래연습</strong>
+                  <span class="category">회화</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-01.jpg"
+                    alt="김재선 작가의 노래연습 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">김재선</span>
+                  <span class="year">2003</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">평화의 메아리</strong>
+                  <span class="category">한국화</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-02.jpg"
+                    alt="전영화 작가의 평화의 메아리 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">전영화</span>
+                  <span class="year">1995</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">인화분청항아리</strong>
+                  <span class="category">공예</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-03.jpg"
+                    alt="최홍일 작가의 인화분청항아리 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">최홍일</span>
+                  <span class="year">2011</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">오륭승운</strong>
+                  <span class="category">서예</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-04.jpg"
+                    alt="인영선 작가의 오륭승운 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">인영선</span>
+                  <span class="year">2012</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">변형</strong>
+                  <span class="category">공예</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-05.jpg"
+                    alt="강두원 작가의 변형 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">강두원</span>
+                  <span class="year">2001</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">자화상</strong>
+                  <span class="category">사진</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-06.jpg"
+                    alt="석창원 작가의 자화상 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">석창원</span>
+                  <span class="year">2003</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">얼굴</strong>
+                  <span class="category">조각</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-07.jpg"
+                    alt="채수용 작가의 얼굴 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">채수용</span>
+                  <span class="year">1998</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">봄의 왈츠</strong>
+                  <span class="category">한국화</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-08.jpg"
+                    alt="박진균 작가의 봄의 왈츠 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">박진균</span>
+                  <span class="year">2011</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">신 무릉도원-동행</strong>
+                  <span class="category">회화</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-09.jpg"
+                    alt="왕열 작가의 신 무릉도원-동행 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">왕열</span>
+                  <span class="year">2012</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">흔적</strong>
+                  <span class="category">회화</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-10.jpg"
+                    alt="오경택 작가의 흔적 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">오경택</span>
+                  <span class="year">1999</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">분청사기 포도문호</strong>
+                  <span class="category">공예</span>
+                </div>
+                <div class="gallery">
+                  <img
+                    src="images/artwork-11.jpg"
+                    alt="박광천 작가의 분청사기 포도문호 작품"
+                  />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">박광천</span>
+                  <span class="year">2012</span>
+                </div>
+              </a>
+            </div>
+            <div class="artwork">
+              <a href="#none">
+                <div class="artwork-name">
+                  <strong class="name">부엉이</strong>
+                  <span class="category">한국화</span>
+                </div>
+                <div class="gallery">
+                  <img src="images/artwork-12.jpg" alt="김무호 작가의  작품" />
+                </div>
+                <div class="artwork-info">
+                  <span class="author">김무호</span>
+                  <span class="year">연도미상</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="notice">
+          <div class="cont-inner">
+            <div class="edu-program">
+              <div class="title-cont">
+                <h3 class="subject-tit">교육&middot;이벤트</h3>
+                <div class="control-btn">
+                  <div class="swiper-btns">
+                    <button class="swiper-button-prev swiper-button"></button>
+                    <button class="swiper-button-next swiper-button"></button>
+                  </div>
+                  <div class="pagination">
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="program-slider swiper-container">
+                <ul class="swiper-wrapper">
+                  <li class="program-thumb swiper-slide">
+                    <a href="#none">
+                      <img
+                        src="images/edu-program-01.png"
+                        alt="시각장애인과 함께 움직이기 프로그램"
+                      />
+                    </a>
+                  </li>
+                  <li class="program-thumb swiper-slide">
+                    <a href="#none">
+                      <img
+                        src="images/edu-program-02.jpg"
+                        alt="어린이 교육프로그램"
+                      />
+                    </a>
+                  </li>
+                  <li class="program-thumb swiper-slide">
+                    <a href="#none">
+                      <img
+                        src="images/edu-program-03.png"
+                        alt="다다익선: 즐거운 협연"
+                      />
+                    </a>
+                  </li>
+                  <li class="program-thumb swiper-slide">
+                    <a href="#none">
+                      <img
+                        src="images/edu-program-04.png"
+                        alt="무브망 - 조각의 선"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="newsletter">
+              <div class="title-cont">
+                <h3 class="subject-tit">미술관 소식</h3>
+                <a href="#none" class="btn-more">
+                  <span>더보기</span>
+                </a>
+              </div>
+              <div class="news-cont">
+                <ul class="news-list">
+                  <li>
+                    <a href="#none" class="news-item">
+                      <span class="badge">공지<i>사항</i></span>
+                      <p class="news">
+                        서울시립박물관, 2023년도 문화자원봉사자를 모집합니다.
+                      </p>
+                      <span class="date">2023.03.15</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="news-item">
+                      <span class="badge">공지<i>사항</i></span>
+                      <p class="news">디지털 실감 영상관 1관 기기 점검 안내</p>
+                      <span class="date">2023.02.05</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="news-item">
+                      <span class="badge">공지<i>사항</i></span>
+                      <p class="news">
+                        2023년 상반기 청년멘토 교육대상자 및 교육일정 알림
+                      </p>
+                      <span class="date">2023.01.22</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#none" class="news-item">
+                      <span class="badge">공지<i>사항</i></span>
+                      <p class="news">
+                        설 연휴기간(1.21~24) 서울시립박물관 식음료장 영업안내
+                      </p>
+                      <span class="date">2023.01.09</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="cont-inner">
+          <div class="footer">
+            <div class="foot-menu">
+              <div class="foot-column">
+                <ul class="family-site">
+                  <li><a href="#none">문화유산표준관리시스템</a></li>
+                  <li><a href="#none">청년멘토</a></li>
+                  <li><a href="#none">VCM 가상명품박물관</a></li>
+                </ul>
+              </div>
+              <div class="foot-column">
+                <ul class="policy">
+                  <li>
+                    <a href="#none"><b>개인정보처리방침</b></a>
+                  </li>
+                  <li><a href="#none">이용약관</a></li>
+                  <li><a href="#none">저작권보호정책</a></li>
+                  <li><a href="#none">이메일무단수집거부</a></li>
+                  <li><a href="#none">접근성 안내</a></li>
+                  <li><a href="#none">오시는길</a></li>
+                </ul>
+              </div>
+              <div class="foot-column">
+                <ul class="sns-link">
+                  <li>
+                    <a href="#none"><i class="xi-naver-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#none"><i class="xi-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#none"><i class="xi-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#none"><i class="xi-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#none"><i class="xi-youtube-play"></i></a>
+                  </li>
+                </ul>
+                <div class="address">
+                  <p>서울 중구 덕수궁길 61 Tel.02-2124-8800</p>
+                  <span class="email">sema@seoul.go.kr</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Top button -->
+      <button class="btn-top">
+        <i class="xi-angle-up-min"></i>
+      </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      //header scroll style
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+      //header active
+      $(".main-menu").hover(
+        function () {
+          var windowSize = $(window).width();
+          if (windowSize > 940) {
+            $(this).children(".main-menu-link").addClass("active");
+            $(".sub-gnb-wrap").stop().slideDown(250);
+            $(".header-wrap").addClass("active");
+          } else {
+            $(".header-wrap").removeClass("active");
+          }
+        },
+        function () {
+          var windowSize = $(window).width();
+          if (windowSize > 940) {
+            $(this).children(".main-menu-link").removeClass("active");
+            $(".sub-gnb-wrap").stop().slideUp(250);
+            $(".header-wrap").removeClass("active");
+          }
+        }
+      );
+      //mobile menu click slideUpDown
+      $(".main-menu-link").click(function () {
+        var windowSize = $(window).width();
+        if (windowSize < 960) {
+          $(".sub-gnb-wrap").stop().slideUp();
+          $(this).next(".sub-gnb-wrap").stop().slideToggle();
+          $(this)
+            .parent()
+            .siblings()
+            .find(".main-menu-link")
+            .removeClass("active");
+          $(this).toggleClass("active");
+        }
+      });
+      //dim click
+      $(".dim").click(function () {
+        $(this).removeClass("on");
+        $(".nav").removeClass("active");
+        $(".mobile-menu").removeClass("active");
+        $(".sub-gnb-wrap").stop().slideUp();
+        $(".main-menu-link").removeClass("active");
+      });
+
+      //mobile menu Click
+      $(".mobile-menu").click(function () {
+        $(this).toggleClass("active");
+        if ($(this).hasClass("active")) {
+          $(".nav").addClass("active");
+          $(".dim").addClass("on");
+        } else {
+          $(".nav").removeClass("active");
+          $(".dim").removeClass("on");
+          $(".sub-gnb-wrap").stop().slideUp();
+          $(".main-menu-link").removeClass("active");
+        }
+      });
+
+      //Exhibition Swiper Slider
+      var swiper = new Swiper(".exhibition-slider", {
+        slidesPerView: 1,
+        loop: true,
+        slidesPerGroup: 1,
+        spaceBetween: 35,
+        loopFillGroupWithBlank: true,
+        speed: 1000,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 35,
+          },
+          960: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+        },
+      });
+      //Exhibition Swiper Controls
+      $(".control-button").click(function () {
+        $(this).toggleClass("stop");
+        if ($(this).hasClass("stop")) {
+          swiper.autoplay.stop();
+        } else {
+          swiper.autoplay.start();
+        }
+      });
+      //Notice: edu-program Slider
+      var swiper = new Swiper(".program-slider", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      //top button
+      $(window).scroll(function () {
+        if ($(window).scrollTop() > $(".header").height()) {
+          $(".btn-top").addClass("on");
+        } else {
+          $(".btn-top").removeClass("on");
+        }
+      });
+      $(".btn-top").click(function () {
+        $("html,body").animate({ scrollTop: 0 }, 300);
+      });
+    </script>
+  </body>
+</html>

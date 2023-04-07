@@ -1,0 +1,386 @@
+@media (max-width: 1280px) {
+  /* Header */
+  .header .logo {
+    font-size: 18px;
+  }
+  .main-menu-link {
+    padding: 15px 37px;
+  }
+  .utility-links li a {
+    padding: 7px;
+    font-size: 15px;
+  }
+
+  /* Common CSS */
+  section:not(.intro) {
+    padding: 80px 0 50px;
+  }
+  .title-cont {
+    margin-bottom: 45px;
+  }
+  .title-cont .subject-tit {
+    font-size: 35px;
+  }
+  /* Section: Intro */
+  .intro-thumb .intro-title h2 {
+    margin-bottom: 15px;
+    font-size: 50px;
+  }
+  .intro-thumb .intro-title button {
+    padding: 10px 25px;
+    border-width: 2px;
+    font-size: 16px;
+  }
+  .info-list li {
+    margin-right: 55px;
+  }
+  .info-list .info-tit {
+    font-size: 22px;
+  }
+  .info-list li span {
+    margin-bottom: 4px;
+    font-size: 17px;
+  }
+  /* Section: Notice */
+  .notice .cont-inner {
+    gap: 30px;
+  }
+  .edu-program .title-cont {
+    margin-bottom: 45px;
+  }
+  .program-slider {
+    height: 420px;
+  }
+  .newsletter .news-cont .news-item {
+    padding: 35px 0;
+  }
+  .newsletter .news-cont .news-item .news {
+    margin-left: 15px;
+  }
+} /* //~1280px */
+@media (max-width: 960px) {
+  /* Header */
+  .header .header-wrap {
+    height: auto;
+  }
+  .header .header-gnb {
+    position: relative;
+    width: 100%;
+  }
+  .header .logo {
+    margin-left: 2.5%;
+    font-size: 18px;
+  }
+  .nav {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    width: 350px;
+    height: 100vh;
+    background: #fff;
+    transition: 0.3s;
+  }
+  .nav.active {
+    right: 0;
+  }
+  .main-gnb {
+    display: block;
+    margin-top: 100px;
+  }
+  .main-gnb .main-menu {
+    display: block;
+    margin: 0;
+    padding: 0 25px;
+  }
+  .main-menu-link {
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--point-color);
+    color: var(--black-color);
+  }
+  .main-menu-link:after {
+    content: "\f107";
+    float: right;
+    margin-top: 5px;
+    font-family: fontawesome;
+    vertical-align: middle;
+    color: var(--black-color);
+    transition: 0.3s;
+  }
+  .main-menu-link.active:after {
+    transform: rotate(180deg);
+  }
+  .main-menu-link:hover,
+  .main-menu-link.active {
+    background: var(--point-color);
+    color: #fff;
+  }
+  .main-menu-link:hover:after,
+  .main-menu-link.active:after {
+    color: #fff;
+  }
+  .sub-gnb-wrap {
+    position: relative;
+  }
+  .sub-gnb-wrap.active {
+    display: block;
+  }
+  .sub-gnb {
+    text-align: left;
+  }
+  .sub-gnb .sub-menu {
+    margin: 0;
+  }
+  .sub-menu-link {
+    padding: 15px 40px;
+  }
+  /* Mobile-menu */
+  .mobile-menu {
+    margin-right: 2.5%;
+    position: relative;
+    z-index: 600;
+    display: block;
+    width: 30px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .mobile-menu .bar {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    transition: 0.3s;
+  }
+  .mobile-menu .bar:nth-child(1) {
+    transform: translateY(-5px);
+  }
+  .mobile-menu .bar:nth-child(3) {
+    transform: translateY(5px);
+  }
+  .mobile-menu.active .bar {
+    background: #000;
+  }
+  .mobile-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .mobile-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile-menu.active .bar:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  .dim.on {
+    display: block;
+  }
+
+  .utility-links {
+    display: none;
+  }
+  /* Hover Effect */
+  .header:hover .mobile-menu .bar {
+    background: #000;
+  }
+  /* Common CSS */
+  .title-cont .btn-more {
+    font-size: 15px;
+  }
+  .title-cont .btn-more:after {
+    margin-left: -5px;
+    font-size: 19px;
+  }
+  /* Section: Intro */
+  .intro-info-guide {
+    align-items: flex-end;
+  }
+  .info-list {
+    flex-direction: column;
+    flex: 1;
+    gap: 15px;
+  }
+  .info-list li {
+    display: flex;
+    gap: 15px;
+    margin-right: 0;
+  }
+  .info-list .info-tit {
+    min-width: 85px;
+  }
+  /* Section: Collection */
+  .collection .title-cont {
+    width: 90%;
+  }
+  .artwork .artwork-info .author:after {
+    height: 1px;
+  }
+  /* Section: Notice */
+  .notice .cont-inner {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .newsletter .news-cont .news-item {
+    padding: 25px 0;
+  }
+  /* Footer */
+  .family-site li {
+    font-size: 16px;
+  }
+  .sns-link li a {
+    font-size: 32px;
+  }
+  .address {
+    font-size: 16px;
+  }
+} /* //~960px */
+@media (max-width: 768px) {
+  /* Common CSS */
+  section:not(.intro) {
+    padding: 50px 0;
+  }
+  .title-cont {
+    margin-bottom: 35px;
+  }
+  .title-cont .subject-tit {
+    font-size: 30px;
+  }
+  /* Section: Intro */
+  .intro-thumb .video-wrap video {
+    min-height: 85vh;
+  }
+  .info-list .info-tit {
+    font-size: 20px;
+  }
+  .intro-info-guide {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .info-guide {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  .info-guide a {
+    margin: 0;
+    flex: 1;
+    border-width: 2px;
+    text-align: center;
+  }
+  /* Section: Exhibition */
+  .exhibition .title-cont {
+    margin-bottom: 35px;
+  }
+  /* Section: Notice */
+  .newsletter .news-cont .news-item {
+    padding: 18px 0;
+    font-size: 16px;
+  }
+  .newsletter .news-cont .news-item .news {
+    margin-left: 10px;
+  }
+  .newsletter .news-cont .news-item .badge {
+    font-size: 14px;
+    padding: 3px 10px;
+  }
+  .newsletter .news-cont .news-item .badge i {
+    display: none;
+  }
+  /* Footer */
+  .foot-menu {
+    flex-direction: column;
+    gap: 25px;
+  }
+} /* //~768px */
+@media (max-width: 480px) {
+  /* Common CSS */
+  .cont-inner {
+    width: 90%;
+  }
+  section:not(.intro) {
+    padding: 60px 0 25px;
+  }
+  .title-cont {
+    margin-bottom: 30px;
+  }
+  .title-cont .subject-tit {
+    font-size: 24px;
+  }
+  .swiper-btns .swiper-button {
+    height: auto;
+  }
+  /* Section: Intro */
+  .intro-thumb .intro-title h2 {
+    margin-bottom: 25px;
+    font-size: 43px;
+  }
+  .intro-thumb .intro-title button {
+    padding: 10px 20px;
+    font-size: 15px;
+    line-height: 1;
+  }
+  .intro-info {
+    padding: 60px 0 65px;
+  }
+  .intro-info-guide {
+    align-items: center;
+    gap: 45px;
+  }
+  .info-list .info-tit {
+    min-width: 75px;
+    font-size: 16px;
+  }
+  .info-list li {
+    gap: 0;
+  }
+  .info-list li span {
+    font-size: 15px;
+    margin-bottom: 2px;
+  }
+  /* Section: Collection */
+  .art-content {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2px;
+    padding: 2px 0;
+  }
+  .artwork .artwork-name .name {
+    font-size: 18px;
+  }
+  .artwork .gallery {
+    width: 100%;
+  }
+  /* Section: Exhibition */
+  .exhibition .swiper-btns {
+    height: auto;
+  }
+  .swiper-btns .swiper-button:after {
+    font-size: 19px;
+  }
+  .exhibition .swiper-btns .control-button {
+    height: 21px;
+  }
+  .exhibition .swiper-btns .control-button:before {
+    margin-top: 0;
+  }
+  .exhibit .item-desc {
+    padding-left: 0;
+  }
+  /* Section: Notice */
+  .edu-program .title-cont {
+    margin-bottom: 30px;
+  }
+  .newsletter .news-cont .news-item {
+    font-size: 15px;
+  }
+  /* Footer */
+  .foot-menu {
+    gap: 20px;
+  }
+  /* Top-button */
+  .btn-top {
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+  }
+} /* //~480px */
