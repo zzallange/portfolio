@@ -40,6 +40,9 @@ button {
   --point-kr: "TheJamsil5Bold";
 }
 /* ###### Common CSS ###### */
+body.active::-webkit-scrollbar {
+  display: none;
+}
 section {
   padding: 80px 0 0;
 }
@@ -118,6 +121,10 @@ header .header-inner {
 .gnb li:hover a,
 .gnb li.active a {
   color: var(--point-color);
+}
+.btn-menu,
+.dim {
+  display: none;
 }
 /* ###### MAIN ###### */
 main {

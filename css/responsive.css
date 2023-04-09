@@ -3,7 +3,6 @@
   section {
     padding: 70px 0 0;
   }
-  /* ###### Header ###### */
   /* ###### MAIN ###### */
   main .main-title {
     font-size: 100px;
@@ -29,7 +28,6 @@
     flex: 1.5;
     gap: 15px;
   }
-  /* ###### Section: Skill ###### */
   /* ###### Section: Project ###### */
   .project {
     margin-top: 20px;
@@ -61,7 +59,6 @@
   .project-image:hover ~ .project-info .more-view .btn-more {
     transform: translateX(18px);
   }
-  /* ###### Header ###### */
   /* ###### MAIN ###### */
   main .main-title {
     font-size: 70px;
@@ -127,7 +124,6 @@
   .project-info .project-view [class*="btn-"] {
     padding: 8px 18px;
   }
-  /* ###### Section: eqilogue ###### */
 } /* //1024~767 */
 @media (max-width: 768px) {
   /* ###### Common CSS ###### */
@@ -135,6 +131,83 @@
     font-size: 33px;
   }
   /* ###### Header ###### */
+  .header.active {
+    position: relative;
+  }
+  .dim {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+  }
+  .dim.active {
+    display: block;
+  }
+  header .header-inner {
+    position: relative;
+    z-index: 100;
+  }
+  .btn-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 35px;
+    cursor: pointer;
+  }
+  .btn-menu .bar {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 2px;
+    background: var(--point-color);
+    transition: 0.3s;
+  }
+  .btn-menu .bar:nth-child(1) {
+    transform: translateY(-5px);
+  }
+  .btn-menu .bar:nth-child(3) {
+    transform: translateY(5px);
+  }
+  .btn-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .btn-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .btn-menu.active .bar:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+  nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    background: #fff;
+    width: 100vw;
+    height: 270px;
+    transition: 0.3s;
+  }
+  nav.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .gnb li {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+  .gnb li a {
+    display: block;
+  }
   /* ###### MAIN ###### */
   main .main-title {
     left: 50%;
@@ -174,7 +247,6 @@
   .work-slider .work-item {
     height: 350px;
   }
-  /* ###### Section: eqilogue ###### */
 } /* //768~481 */
 @media (max-width: 480px) {
   /* ###### Common CSS ###### */
@@ -184,8 +256,6 @@
   .section-title {
     font-size: 30px;
   }
-  /* ###### Header ###### */
-  /* ###### MAIN ###### */
   /* ###### Section: Intro ###### */
   main .main-title {
     font-size: 50px;
@@ -247,5 +317,4 @@
   .project-column {
     gap: 45px;
   }
-  /* ###### Section: eqilogue ###### */
 } /* //480~ */
