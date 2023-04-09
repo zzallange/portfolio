@@ -24,4 +24,13 @@ $(function () {
       }
     }
   });
+  //project-item-link Click html scroll
+  $(".project-item-link").click(function () {
+    $("body").addClass("active");
+    if ($(".featherlight-iframe")) {
+      $(".featherlight-close-icon").click(function () {
+        $("body").removeClass("active");
+      });
+    }
+  });
 }); //end
