@@ -158,3 +158,13 @@ section .headline {
 .list-box .art-color li:nth-child(3) .color {
   background: #c9ab81;
 }
+/* hanhwa-gallery */
+.list-box .hanhwa-color li:nth-child(1) .color {
+  background: #f7f7f7;
+}
+.list-box .hanhwa-color li:nth-child(2) .color {
+  background: #1e1c1c;
+}
+.list-box .hanhwa-color li:nth-child(3) .color {
+  background: #ff6600;
+}
