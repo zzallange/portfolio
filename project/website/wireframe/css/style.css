@@ -148,3 +148,13 @@ section .headline {
 .list-box .iloom-color li:nth-child(5) .color {
   background: #c80a1e;
 }
+/* art-gallery */
+.list-box .art-color li:nth-child(1) .color {
+  background: #1e1e1e;
+}
+.list-box .art-color li:nth-child(2) .color {
+  background: #7d7d7d;
+}
+.list-box .art-color li:nth-child(3) .color {
+  background: #c9ab81;
+}
