@@ -10,6 +10,22 @@ $(function () {
     var offset = content.offset().top;
     $("html, body").animate({ scrollTop: offset }, 600);
     target.addClass("active").siblings().removeClass("active");
+    if (window.innerWidth < 768) {
+      $(".dim").removeClass("active");
+      $(".nav").removeClass("active");
+      $(".btn-menu").removeClass("active");
+    }
+  });
+  //mobile menu
+  $(".btn-menu").click(function () {
+    $(this).toggleClass("active");
+    $(".nav").toggleClass("active");
+    $(".dim").toggleClass("active");
+  });
+  $(".dim").click(function () {
+    $(this).removeClass("active");
+    $(".nav").removeClass("active");
+    $(".dim").removeClass("active");
   });
   //scroll active
   $(window).scroll(function () {
