@@ -25,6 +25,21 @@ $(function () {
     }
     lastScrollTop = winScroll;
   }
+  //mobile menu
+  $(".btn-menu").click(function () {
+    $(this).toggleClass("active");
+    $('.header .head-bottom').toggleClass('active');
+  });
+  $(".menu-dep1").click(function () {
+    $(this)
+      .toggleClass("active")
+      .parent()
+      .siblings()
+      .find(".menu-dep1")
+      .removeClass("active");
+    $(".sub-gnb-wrap").stop().slideUp(250);
+    $(this).next().stop().slideToggle(250);
+  });
   //Category Best Item
   $(".category-menu-icon").click(function () {
     $(".category-menu-icon").removeClass("active");
@@ -44,21 +59,21 @@ $(function () {
       .siblings()
       .removeClass("active");
   });
-  //footer
+  //sitemap resize
   $(".sitemap-list .title").click(function () {
-    $(this).nextAll().stop().slideToggle();
-    $(this).parent().siblings().find(".title").nextAll().slideUp();
-    $(this)
-      .toggleClass("active")
-      .parent()
-      .siblings()
-      .find(".title")
-      .removeClass("active");
+    if (window.innerWidth < 1024) {
+      $(this).nextAll().stop().slideToggle();
+      $(this).parent().siblings().find(".title").nextAll().slideUp();
+      $(this)
+        .toggleClass("active")
+        .parent()
+        .siblings()
+        .find(".title")
+        .removeClass("active");
+    } else if (window.innerWidth >= 1024) {
+      $(this).removeClass("active");
+      $(this).nextAll().show();
+      $(this).parent().siblings().find(".title").nextAll().show();
+    }
   });
-  // $(window).resize(function () {
-  //   var windowSize = $(window).width();
-  //   if (windowSize < 1024) {
-
-  //   }
-  // });
 }); //end
