@@ -64,6 +64,11 @@
                   </a>
                 </li>
               </ul>
+              <button class="btn-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
             </div>
             <!-- //head-Top -->
             <div class="head-bottom">
@@ -153,6 +158,7 @@
             <!-- //head-bottom -->
           </div>
         </div>
+        <div class="overlay"></div>
       </header>
       <div id="container">
         <main class="content">
@@ -633,9 +639,8 @@
           </section>
           <section class="best-category">
             <div class="cont-inner">
-              <!-- <h2 class="subject-title">카테고리별 베스트 제품</h2> -->
-              <div class="category-menu swiper-container">
-                <div class="swiper-wrapper">
+              <div class="category-menu">
+                <div class="category-menu-wrap">
                   <a href="#none" class="category-menu-icon active">
                     <span class="icon-photo">
                       <img
@@ -3421,7 +3426,6 @@
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
-        centeredSlides: true,
         speed: 500,
         navigation: {
           prevEl: ".swiper-button-prev",
@@ -3430,7 +3434,7 @@
       });
       //section recommend-product slider
       var swiper = new Swiper(".product-slider", {
-        slidesPerView: 3,
+        slidesPerView: 1.1,
         spaceBetween: 20,
         speed: 500,
         navigation: {
@@ -3444,6 +3448,14 @@
         breakpoints: {
           1280: {
             slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2.2,
             spaceBetween: 20,
           },
         },
