@@ -68,13 +68,13 @@ button {
   position: fixed;
   top: -67px;
 }
-.head-top-left {
+.head-top-wrap {
   display: flex;
   align-items: center;
   width: 100%;
   flex: 1;
 }
-.head-top-left h1 {
+.head-top-wrap h1 {
   line-height: 1;
 }
 .btn-menu {
