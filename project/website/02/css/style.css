@@ -1,5 +1,5 @@
-/* XEICON */
-@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+/* Fontawesome CDN */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 /* Font CDN */
 @font-face {
   font-family: "BookkMyungjo-Bd";
@@ -39,6 +39,7 @@ button {
   cursor: pointer;
 }
 i {
+  font-family: fontawesome;
   font-style: normal;
 }
 :root {
@@ -63,7 +64,7 @@ i {
   width: 50px;
   height: 50px;
   background: rgba(0, 0, 0, 0.35);
-  font-size: 30px;
+  font-size: 18px;
   line-height: 1;
   color: #fff;
   transition: 0.3s;
@@ -99,13 +100,13 @@ section:not(.intro) {
   position: relative;
 }
 .title-cont .btn-more:after {
-  content: "\e93f";
+  content: "\f105";
   display: inline-block;
   margin-top: -3px;
   margin-left: -2px;
   vertical-align: middle;
-  font-family: xeicon;
-  font-size: 20px;
+  font-family: fontawesome;
+  font-size: 18px;
 }
 .swiper-btns {
   position: relative;
@@ -366,19 +367,19 @@ section:not(.intro) {
   height: 44px;
 }
 .exhibition .swiper-btns .control-button {
-  font-size: 22px;
+  font-size: 18px;
   vertical-align: middle;
   height: 44px;
 }
 .exhibition .swiper-btns .control-button:before {
-  content: "\ea3b";
+  content: "\f04b";
   display: inline-block;
   margin-top: 4px;
-  font-family: xeicon;
+  font-family: fontawesome;
   transition: 0.3s;
 }
 .exhibition .swiper-btns .control-button.stop:before {
-  content: "\ea3e";
+  content: "\f04c";
 }
 /* Swiper Slider */
 .exhibition-slider {
@@ -614,10 +615,10 @@ section:not(.intro) {
   align-items: center;
 }
 .sns-link li {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .sns-link li a {
-  font-size: 35px;
+  font-size: 25px;
 }
 .address {
   margin-top: 10px;
